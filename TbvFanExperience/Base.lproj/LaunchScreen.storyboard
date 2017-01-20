@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bkgnd_main.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="jNq-gF-0xC">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="kdL-YQ-dSq">
+                                <rect key="frame" x="48" y="287" width="279" height="93"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="kdL-YQ-dSq" secondAttribute="height" multiplier="675:226" id="vfH-8g-TdS"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="jNq-gF-0xC" secondAttribute="bottom" id="9Ga-oI-ur0"/>
+                            <constraint firstAttribute="trailing" secondItem="jNq-gF-0xC" secondAttribute="trailing" id="F8y-Sd-Aon"/>
+                            <constraint firstItem="kdL-YQ-dSq" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="JRc-oY-C7d"/>
+                            <constraint firstItem="jNq-gF-0xC" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="NqY-V4-BDI"/>
+                            <constraint firstItem="kdL-YQ-dSq" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="32" id="Rnu-kM-0yL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kdL-YQ-dSq" secondAttribute="trailing" constant="32" id="RsI-Zz-M6d"/>
+                            <constraint firstItem="kdL-YQ-dSq" firstAttribute="width" secondItem="kdL-YQ-dSq" secondAttribute="height" multiplier="675:226" id="j2N-ZE-nd6"/>
+                            <constraint firstItem="jNq-gF-0xC" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="zqK-qi-oBR"/>
+                        </constraints>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="354.5" y="378.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bkgnd_main.jpg" width="1920" height="1080"/>
+        <image name="login_logo.png" width="675" height="226"/>
+    </resources>
+</document>
